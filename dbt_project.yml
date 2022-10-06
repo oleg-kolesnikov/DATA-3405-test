@@ -1,0 +1,14 @@
+name: 'hu_dw_datawarehouse'
+version: '0.0.1'
+config-version: 2
+
+require-dbt-version: ">=0.16.0"
+
+profile: 'default'
+
+model-paths: ["models","sources"]
+docs-paths: ["schemata","models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["data"]
+macro-paths: ["macros"]

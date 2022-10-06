@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: featuredata3405_scratch
+    database: defaultdb
+    schema: featuredata3405_scratch
+    tables:
+      - name: test_table_1

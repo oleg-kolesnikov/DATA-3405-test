@@ -1,0 +1,862 @@
+
+
+============================== 2022-10-06 14:25:03.138018 | 652187e3-daf2-4bef-8538-d1d893cce135 ==============================
+[0m14:25:03.138031 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:25:03.138453 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m14:25:03.138574 [debug] [MainThread]: Tracking: tracking
+[0m14:25:03.181246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0855596a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0855599a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff085568430>]}
+[0m14:25:03.182796 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m14:25:03.183509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff0855599a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff085568430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff085568ac0>]}
+[0m14:25:03.183831 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-06 14:30:49.843577 | 75261c57-6151-4713-ba2c-7c1e67412563 ==============================
+[0m14:30:49.843589 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:30:49.844701 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m14:30:49.844884 [debug] [MainThread]: Tracking: tracking
+[0m14:30:49.875696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3eb56e670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3eb53b4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3eb53b730>]}
+[0m14:30:49.877137 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/okolesnikov/.dbt
+[0m14:30:49.877782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3eb53b730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3eb515cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3eb515e80>]}
+[0m14:30:49.878136 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-06 14:32:40.958687 | 57157579-68f8-497b-a6ef-466e352cfd9b ==============================
+[0m14:32:40.958699 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:32:40.959057 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m14:32:40.959186 [debug] [MainThread]: Tracking: tracking
+[0m14:32:40.979336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46a4bc5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46a4b3b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46a4b3280>]}
+[0m14:32:40.980862 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test
+[0m14:32:40.981284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46a4b3280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46a4b3250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc46a4b3220>]}
+[0m14:32:40.981588 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-06 14:33:04.371400 | 1f7effd8-e404-4dc5-bc1d-12171d64d9f4 ==============================
+[0m14:33:04.371412 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:33:04.371845 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test/profiles.yml', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m14:33:04.371989 [debug] [MainThread]: Tracking: tracking
+[0m14:33:04.392626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd41966e6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd41963c0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd41963cf40>]}
+[0m14:33:04.394288 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test/profiles.yml
+[0m14:33:04.394811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd41963cf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd416104190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd4196334c0>]}
+[0m14:33:04.395096 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-06 14:35:08.248770 | 79750c07-dda0-4c8f-affe-7aa1cbc2a485 ==============================
+[0m14:35:08.248801 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:35:08.249701 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'postgres', 'select': ['test_table_2'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:35:08.249911 [debug] [MainThread]: Tracking: tracking
+[0m14:35:08.270166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf817970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf825f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf8278b0>]}
+[0m14:35:08.287669 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m14:35:08.288029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '79750c07-dda0-4c8f-affe-7aa1cbc2a485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf8163d0>]}
+[0m14:35:08.330463 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m14:35:08.337767 [debug] [MainThread]: Parsing macros/relations.sql
+[0m14:35:08.339296 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m14:35:08.367398 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+[0m14:35:08.369303 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m14:35:08.370074 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m14:35:08.371530 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m14:35:08.378011 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m14:35:08.378491 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m14:35:08.379985 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m14:35:08.381123 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m14:35:08.385054 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m14:35:08.387652 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m14:35:08.389437 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m14:35:08.405887 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m14:35:08.418671 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m14:35:08.430742 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m14:35:08.435283 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m14:35:08.437029 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m14:35:08.438749 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m14:35:08.442862 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m14:35:08.458900 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m14:35:08.460360 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m14:35:08.469370 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m14:35:08.483472 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m14:35:08.488521 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m14:35:08.490980 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m14:35:08.495632 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m14:35:08.496728 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m14:35:08.499834 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m14:35:08.501983 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m14:35:08.508301 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m14:35:08.523543 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m14:35:08.524843 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m14:35:08.526994 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m14:35:08.528604 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m14:35:08.529375 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m14:35:08.530033 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m14:35:08.530567 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m14:35:08.531678 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m14:35:08.535317 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m14:35:08.542656 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m14:35:08.543346 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m14:35:08.544511 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m14:35:08.545287 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m14:35:08.546041 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m14:35:08.547024 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m14:35:08.547683 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m14:35:08.548527 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m14:35:08.549415 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m14:35:08.552035 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m14:35:08.553096 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m14:35:08.554244 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m14:35:08.555168 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m14:35:08.556001 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m14:35:08.556724 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m14:35:08.557766 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m14:35:08.558502 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m14:35:08.593370 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m14:35:08.594329 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m14:35:08.596062 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m14:35:08.598529 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m14:35:08.599708 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m14:35:08.601805 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m14:35:08.604293 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m14:35:08.620616 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m14:35:08.623475 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m14:35:08.637485 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m14:35:08.641949 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m14:35:08.648875 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m14:35:08.658353 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m14:35:08.883944 [debug] [MainThread]: 1699: static parser successfully parsed test_table_2.sql
+[0m14:35:08.933847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79750c07-dda0-4c8f-affe-7aa1cbc2a485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf992fa0>]}
+[0m14:35:08.939160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79750c07-dda0-4c8f-affe-7aa1cbc2a485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf816ca0>]}
+[0m14:35:08.939570 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m14:35:08.939884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79750c07-dda0-4c8f-affe-7aa1cbc2a485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf963310>]}
+[0m14:35:08.941014 [info ] [MainThread]: 
+[0m14:35:08.941557 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m14:35:08.942481 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb"
+[0m14:35:08.953502 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m14:35:08.953724 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:35:08.953850 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:35:11.135816 [debug] [ThreadPool]: SQL status: SELECT 5 in 2.18 seconds
+[0m14:35:11.140213 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m14:35:11.142834 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:35:11.154191 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:35:11.154502 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: BEGIN
+[0m14:35:11.154714 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:35:12.130872 [debug] [ThreadPool]: SQL status: BEGIN in 0.98 seconds
+[0m14:35:12.131637 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:35:12.132143 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb_featuredata3405_scratch"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'featuredata3405_scratch'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'featuredata3405_scratch'
+  
+[0m14:35:12.258997 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.13 seconds
+[0m14:35:12.262268 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: ROLLBACK
+[0m14:35:12.381989 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: Close
+[0m14:35:12.386274 [debug] [MainThread]: Using postgres connection "master"
+[0m14:35:12.386600 [debug] [MainThread]: On master: BEGIN
+[0m14:35:12.386834 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:35:13.460704 [debug] [MainThread]: SQL status: BEGIN in 1.07 seconds
+[0m14:35:13.461221 [debug] [MainThread]: Using postgres connection "master"
+[0m14:35:13.461583 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:35:13.603711 [debug] [MainThread]: SQL status: SELECT 0 in 0.14 seconds
+[0m14:35:13.607496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79750c07-dda0-4c8f-affe-7aa1cbc2a485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbf96de20>]}
+[0m14:35:13.608239 [debug] [MainThread]: On master: ROLLBACK
+[0m14:35:13.745082 [debug] [MainThread]: Using postgres connection "master"
+[0m14:35:13.745847 [debug] [MainThread]: On master: BEGIN
+[0m14:35:14.016856 [debug] [MainThread]: SQL status: BEGIN in 0.27 seconds
+[0m14:35:14.017683 [debug] [MainThread]: On master: COMMIT
+[0m14:35:14.018225 [debug] [MainThread]: Using postgres connection "master"
+[0m14:35:14.018670 [debug] [MainThread]: On master: COMMIT
+[0m14:35:14.152711 [debug] [MainThread]: SQL status: COMMIT in 0.13 seconds
+[0m14:35:14.153595 [debug] [MainThread]: On master: Close
+[0m14:35:14.155594 [info ] [MainThread]: Concurrency: 4 threads (target='postgres')
+[0m14:35:14.156749 [info ] [MainThread]: 
+[0m14:35:14.164685 [debug] [Thread-1  ]: Began running node model.hu_dw_datawarehouse.test_table_2
+[0m14:35:14.165306 [info ] [Thread-1  ]: 1 of 1 START view model featuredata3405_scratch.test_table_2 ................... [RUN]
+[0m14:35:14.166430 [debug] [Thread-1  ]: Acquiring new postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:14.166865 [debug] [Thread-1  ]: Began compiling node model.hu_dw_datawarehouse.test_table_2
+[0m14:35:14.167198 [debug] [Thread-1  ]: Compiling model.hu_dw_datawarehouse.test_table_2
+[0m14:35:14.171570 [debug] [Thread-1  ]: Writing injected SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:14.173106 [debug] [Thread-1  ]: finished collecting timing info
+[0m14:35:14.173546 [debug] [Thread-1  ]: Began executing node model.hu_dw_datawarehouse.test_table_2
+[0m14:35:14.220234 [debug] [Thread-1  ]: Writing runtime SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:14.221001 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:14.221231 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: BEGIN
+[0m14:35:14.221345 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:35:15.182445 [debug] [Thread-1  ]: SQL status: BEGIN in 0.96 seconds
+[0m14:35:15.183224 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:15.183724 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+
+  create view "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp" as (
+    SELECT col
+, col*2 AS col_power_2
+FROM
+"defaultdb"."featuredata3405_scratch"."test_table_1"
+  );
+[0m14:35:15.313509 [debug] [Thread-1  ]: SQL status: CREATE VIEW in 0.13 seconds
+[0m14:35:15.326621 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:15.326964 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp" rename to "test_table_2"
+[0m14:35:15.445853 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.12 seconds
+[0m14:35:15.477260 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: COMMIT
+[0m14:35:15.477549 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:15.477723 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: COMMIT
+[0m14:35:15.596430 [debug] [Thread-1  ]: SQL status: COMMIT in 0.12 seconds
+[0m14:35:15.610608 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:35:15.611012 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+drop view if exists "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_backup" cascade
+[0m14:35:15.729959 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.12 seconds
+[0m14:35:15.732688 [debug] [Thread-1  ]: finished collecting timing info
+[0m14:35:15.733103 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: Close
+[0m14:35:15.734232 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79750c07-dda0-4c8f-affe-7aa1cbc2a485', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbfb37fa0>]}
+[0m14:35:15.735042 [info ] [Thread-1  ]: 1 of 1 OK created view model featuredata3405_scratch.test_table_2 .............. [[32mCREATE VIEW[0m in 1.57s]
+[0m14:35:15.735833 [debug] [Thread-1  ]: Finished running node model.hu_dw_datawarehouse.test_table_2
+[0m14:35:15.738118 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m14:35:15.738503 [debug] [MainThread]: Using postgres connection "master"
+[0m14:35:15.738765 [debug] [MainThread]: On master: BEGIN
+[0m14:35:15.738977 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:35:16.707044 [debug] [MainThread]: SQL status: BEGIN in 0.97 seconds
+[0m14:35:16.707841 [debug] [MainThread]: On master: COMMIT
+[0m14:35:16.708340 [debug] [MainThread]: Using postgres connection "master"
+[0m14:35:16.708786 [debug] [MainThread]: On master: COMMIT
+[0m14:35:16.827701 [debug] [MainThread]: SQL status: COMMIT in 0.12 seconds
+[0m14:35:16.828500 [debug] [MainThread]: On master: Close
+[0m14:35:16.829981 [info ] [MainThread]: 
+[0m14:35:16.830611 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 7.89 seconds (7.89s).
+[0m14:35:16.831193 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:35:16.831489 [debug] [MainThread]: Connection 'model.hu_dw_datawarehouse.test_table_2' was properly closed.
+[0m14:35:16.842842 [info ] [MainThread]: 
+[0m14:35:16.843341 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:35:16.843891 [info ] [MainThread]: 
+[0m14:35:16.844353 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:35:16.844990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbfc04f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbfbffdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fedbfbef7f0>]}
+[0m14:35:16.845512 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-06 14:38:47.909591 | c7a5d628-3011-4f75-ad67-86ad99420640 ==============================
+[0m14:38:47.909652 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:38:47.911251 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'postgres', 'select': ['test_table_2'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:38:47.911611 [debug] [MainThread]: Tracking: tracking
+[0m14:38:47.932886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd22259f0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2225add30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2225af8b0>]}
+[0m14:38:48.002077 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:38:48.002526 [debug] [MainThread]: Partial parsing: updated file: hu_dw_datawarehouse://models/test_table_2.sql
+[0m14:38:48.051890 [debug] [MainThread]: 1603: static parser failed on test_table_2.sql
+[0m14:38:48.057571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd22272dca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2225fb790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd2225fb550>]}
+[0m14:38:48.057921 [debug] [MainThread]: Flushing usage events
+[0m14:38:48.721861 [error] [MainThread]: Encountered an error:
+Parsing Error in model test_table_2 (models/test_table_2.sql)
+  at path ['materialized']: Undefined is not of type 'string'
+[0m14:38:48.737469 [error] [MainThread]: jsonschema.exceptions.ValidationError: Undefined is not of type 'string'
+
+Failed validating 'type' in schema['properties']['materialized']:
+    {'default': 'view', 'type': 'string'}
+
+On instance['materialized']:
+    Undefined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/base.py", line 342, in render_update
+    self.update_parsed_node_config(node, config, context=context)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/base.py", line 276, in update_parsed_node_config
+    config_dict = config.build_config_dict(patch_config_dict=patch_config_dict)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/context/context_config.py", line 323, in build_config_dict
+    return src.calculate_node_config_dict(
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/context/context_config.py", line 206, in calculate_node_config_dict
+    finalized = config.finalize_and_validate()
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/contracts/graph/model_config.py", line 352, in finalize_and_validate
+    self.validate(dct)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/hologram/__init__.py", line 989, in validate
+    raise ValidationError.create_from(error) from error
+hologram.ValidationError: Undefined is not of type 'string'
+
+Failed validating 'type' in schema['properties']['materialized']:
+    {'default': 'view', 'type': 'string'}
+
+On instance['materialized']:
+    Undefined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 129, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 191, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/main.py", line 238, in run_from_args
+    results = task.run()
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/task/runnable.py", line 451, in run
+    self._runtime_initialize()
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/task/runnable.py", line 159, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/task/runnable.py", line 92, in _runtime_initialize
+    self.load_manifest()
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/manifest.py", line 219, in get_full_manifest
+    manifest = loader.load()
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/manifest.py", line 349, in load
+    self.parse_project(
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/manifest.py", line 473, in parse_project
+    parser.parse_file(block)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/base.py", line 392, in parse_file
+    self.parse_node(file_block)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/base.py", line 366, in parse_node
+    self.render_update(node, config)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/models.py", line 147, in render_update
+    super().render_update(node, config)
+  File "/Users/okolesnikov/opt/anaconda3/lib/python3.9/site-packages/dbt/parser/base.py", line 346, in render_update
+    raise ParsingException(msg, node=node) from exc
+dbt.exceptions.ParsingException: Parsing Error in model test_table_2 (models/test_table_2.sql)
+  at path ['materialized']: Undefined is not of type 'string'
+
+
+
+============================== 2022-10-06 14:39:14.644474 | e1978f73-34c2-4103-86a6-25c31e5edae0 ==============================
+[0m14:39:14.644507 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:39:14.645488 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'postgres', 'select': ['test_table_2'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:39:14.645734 [debug] [MainThread]: Tracking: tracking
+[0m14:39:14.669409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b71717700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b71723e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b717279a0>]}
+[0m14:39:14.711178 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m14:39:14.711758 [debug] [MainThread]: Partial parsing: updated file: hu_dw_datawarehouse://models/test_table_2.sql
+[0m14:39:14.752924 [debug] [MainThread]: 1603: static parser failed on test_table_2.sql
+[0m14:39:14.766350 [debug] [MainThread]: 1602: parser fallback to jinja rendering on test_table_2.sql
+[0m14:39:14.775222 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e1978f73-34c2-4103-86a6-25c31e5edae0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b717b40d0>]}
+[0m14:39:14.780732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e1978f73-34c2-4103-86a6-25c31e5edae0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b7166f670>]}
+[0m14:39:14.781326 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m14:39:14.781598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1978f73-34c2-4103-86a6-25c31e5edae0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b7189bd00>]}
+[0m14:39:14.782821 [info ] [MainThread]: 
+[0m14:39:14.783424 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m14:39:14.784422 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb"
+[0m14:39:14.795857 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m14:39:14.796089 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:39:14.796220 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:39:15.921792 [debug] [ThreadPool]: SQL status: SELECT 5 in 1.13 seconds
+[0m14:39:15.926451 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m14:39:15.929227 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:39:15.941274 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:39:15.941643 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: BEGIN
+[0m14:39:15.941898 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:39:16.907656 [debug] [ThreadPool]: SQL status: BEGIN in 0.97 seconds
+[0m14:39:16.908403 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:39:16.908880 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb_featuredata3405_scratch"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'featuredata3405_scratch'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'featuredata3405_scratch'
+  
+[0m14:39:17.032378 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.12 seconds
+[0m14:39:17.036239 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: ROLLBACK
+[0m14:39:17.154422 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: Close
+[0m14:39:17.160602 [debug] [MainThread]: Using postgres connection "master"
+[0m14:39:17.160821 [debug] [MainThread]: On master: BEGIN
+[0m14:39:17.160939 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:39:18.124206 [debug] [MainThread]: SQL status: BEGIN in 0.96 seconds
+[0m14:39:18.124996 [debug] [MainThread]: Using postgres connection "master"
+[0m14:39:18.125480 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:39:18.260443 [debug] [MainThread]: SQL status: SELECT 1 in 0.13 seconds
+[0m14:39:18.263358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1978f73-34c2-4103-86a6-25c31e5edae0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b717737f0>]}
+[0m14:39:18.264293 [debug] [MainThread]: On master: ROLLBACK
+[0m14:39:18.383521 [debug] [MainThread]: Using postgres connection "master"
+[0m14:39:18.384343 [debug] [MainThread]: On master: BEGIN
+[0m14:39:18.622907 [debug] [MainThread]: SQL status: BEGIN in 0.24 seconds
+[0m14:39:18.623430 [debug] [MainThread]: On master: COMMIT
+[0m14:39:18.623747 [debug] [MainThread]: Using postgres connection "master"
+[0m14:39:18.624006 [debug] [MainThread]: On master: COMMIT
+[0m14:39:18.742642 [debug] [MainThread]: SQL status: COMMIT in 0.12 seconds
+[0m14:39:18.743601 [debug] [MainThread]: On master: Close
+[0m14:39:18.745280 [info ] [MainThread]: Concurrency: 4 threads (target='postgres')
+[0m14:39:18.746042 [info ] [MainThread]: 
+[0m14:39:18.753200 [debug] [Thread-1  ]: Began running node model.hu_dw_datawarehouse.test_table_2
+[0m14:39:18.753832 [info ] [Thread-1  ]: 1 of 1 START table model featuredata3405_scratch.test_table_2 .................. [RUN]
+[0m14:39:18.754767 [debug] [Thread-1  ]: Acquiring new postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:18.755110 [debug] [Thread-1  ]: Began compiling node model.hu_dw_datawarehouse.test_table_2
+[0m14:39:18.755421 [debug] [Thread-1  ]: Compiling model.hu_dw_datawarehouse.test_table_2
+[0m14:39:18.761210 [debug] [Thread-1  ]: Writing injected SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:18.762240 [debug] [Thread-1  ]: finished collecting timing info
+[0m14:39:18.762659 [debug] [Thread-1  ]: Began executing node model.hu_dw_datawarehouse.test_table_2
+[0m14:39:18.811072 [debug] [Thread-1  ]: Writing runtime SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:18.811820 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:18.812052 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: BEGIN
+[0m14:39:18.812205 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:39:19.776886 [debug] [Thread-1  ]: SQL status: BEGIN in 0.96 seconds
+[0m14:39:19.777666 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:19.778164 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+
+
+  create  table "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp"
+  as (
+    
+
+SELECT col
+, col*2 AS col_power_2
+FROM
+"defaultdb"."featuredata3405_scratch"."test_table_1"
+  );
+[0m14:39:19.901622 [debug] [Thread-1  ]: SQL status: SELECT 5 in 0.12 seconds
+[0m14:39:19.916284 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:19.916649 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_2" rename to "test_table_2__dbt_backup"
+[0m14:39:20.036481 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.12 seconds
+[0m14:39:20.043487 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:20.043886 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp" rename to "test_table_2"
+[0m14:39:20.163109 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.12 seconds
+[0m14:39:20.201398 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: COMMIT
+[0m14:39:20.201627 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:20.201763 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: COMMIT
+[0m14:39:20.321301 [debug] [Thread-1  ]: SQL status: COMMIT in 0.12 seconds
+[0m14:39:20.333985 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:39:20.334365 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+drop view if exists "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_backup" cascade
+[0m14:39:20.456151 [debug] [Thread-1  ]: SQL status: DROP VIEW in 0.12 seconds
+[0m14:39:20.460060 [debug] [Thread-1  ]: finished collecting timing info
+[0m14:39:20.460513 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: Close
+[0m14:39:20.461684 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e1978f73-34c2-4103-86a6-25c31e5edae0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b7189bd00>]}
+[0m14:39:20.462475 [info ] [Thread-1  ]: 1 of 1 OK created table model featuredata3405_scratch.test_table_2 ............. [[32mSELECT 5[0m in 1.71s]
+[0m14:39:20.463389 [debug] [Thread-1  ]: Finished running node model.hu_dw_datawarehouse.test_table_2
+[0m14:39:20.465995 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m14:39:20.466468 [debug] [MainThread]: Using postgres connection "master"
+[0m14:39:20.466739 [debug] [MainThread]: On master: BEGIN
+[0m14:39:20.466971 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:39:21.471725 [debug] [MainThread]: SQL status: BEGIN in 1.0 seconds
+[0m14:39:21.472492 [debug] [MainThread]: On master: COMMIT
+[0m14:39:21.473009 [debug] [MainThread]: Using postgres connection "master"
+[0m14:39:21.473456 [debug] [MainThread]: On master: COMMIT
+[0m14:39:21.594790 [debug] [MainThread]: SQL status: COMMIT in 0.12 seconds
+[0m14:39:21.595619 [debug] [MainThread]: On master: Close
+[0m14:39:21.597327 [info ] [MainThread]: 
+[0m14:39:21.598351 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 6.81 seconds (6.81s).
+[0m14:39:21.599074 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:39:21.599403 [debug] [MainThread]: Connection 'model.hu_dw_datawarehouse.test_table_2' was properly closed.
+[0m14:39:21.613331 [info ] [MainThread]: 
+[0m14:39:21.613961 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:39:21.614864 [info ] [MainThread]: 
+[0m14:39:21.615602 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:39:21.616340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b7163c850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b71725f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b71ae8c70>]}
+[0m14:39:21.616876 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-06 14:41:16.301664 | 41324715-da92-4e51-844d-0c9419112760 ==============================
+[0m14:41:16.301745 [info ] [MainThread]: Running with dbt=1.2.2
+[0m14:41:16.302976 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m14:41:16.303850 [debug] [MainThread]: Tracking: tracking
+[0m14:41:16.366128 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a6ae670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a6ac520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a69a2b0>]}
+[0m14:41:16.431428 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m14:41:16.431850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '41324715-da92-4e51-844d-0c9419112760', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a5bc9a0>]}
+[0m14:41:16.504338 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m14:41:16.508878 [debug] [MainThread]: Parsing macros/relations.sql
+[0m14:41:16.510469 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m14:41:16.548695 [debug] [MainThread]: Parsing macros/materializations/snapshot_merge.sql
+[0m14:41:16.552015 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m14:41:16.553068 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m14:41:16.555257 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m14:41:16.564248 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m14:41:16.564999 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m14:41:16.566968 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m14:41:16.569108 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m14:41:16.574973 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m14:41:16.578542 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m14:41:16.581025 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m14:41:16.668021 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m14:41:16.685617 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m14:41:16.702202 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m14:41:16.707085 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m14:41:16.709101 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m14:41:16.713449 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m14:41:16.718451 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m14:41:16.738360 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m14:41:16.740092 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m14:41:16.752717 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m14:41:16.771467 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m14:41:16.778612 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m14:41:16.783635 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m14:41:16.790415 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m14:41:16.792107 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m14:41:16.797063 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m14:41:16.800860 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m14:41:16.809334 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m14:41:16.833674 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m14:41:16.835623 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m14:41:16.838617 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m14:41:16.841080 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m14:41:16.842188 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m14:41:16.843220 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m14:41:16.844104 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m14:41:16.846252 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m14:41:16.852632 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m14:41:16.863602 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m14:41:16.864718 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m14:41:16.866177 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m14:41:16.867717 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m14:41:16.869011 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m14:41:16.870443 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m14:41:16.871384 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m14:41:16.872641 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m14:41:16.873967 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m14:41:16.876794 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m14:41:16.878379 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m14:41:16.879680 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m14:41:16.881013 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m14:41:16.882548 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m14:41:16.883678 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m14:41:16.884972 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m14:41:16.886202 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m14:41:16.892363 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m14:41:16.893917 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m14:41:16.896533 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m14:41:16.899233 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m14:41:16.900672 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m14:41:16.903342 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m14:41:16.906821 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m14:41:16.923417 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m14:41:16.926923 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m14:41:16.942805 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m14:41:16.948105 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m14:41:16.955842 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m14:41:16.967040 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m14:41:17.252913 [debug] [MainThread]: 1603: static parser failed on test_table_2.sql
+[0m14:41:17.267509 [debug] [MainThread]: 1602: parser fallback to jinja rendering on test_table_2.sql
+[0m14:41:17.314089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '41324715-da92-4e51-844d-0c9419112760', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a7e34c0>]}
+[0m14:41:17.319941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '41324715-da92-4e51-844d-0c9419112760', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a6aeaf0>]}
+[0m14:41:17.320339 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m14:41:17.320666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41324715-da92-4e51-844d-0c9419112760', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a856af0>]}
+[0m14:41:17.322081 [info ] [MainThread]: 
+[0m14:41:17.322708 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m14:41:17.324040 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb"
+[0m14:41:17.340646 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m14:41:17.340889 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:41:17.341056 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:41:18.450414 [debug] [ThreadPool]: SQL status: SELECT 5 in 1.11 seconds
+[0m14:41:18.451797 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m14:41:18.453032 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:41:18.459407 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:41:18.459639 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: BEGIN
+[0m14:41:18.459767 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:41:19.419116 [debug] [ThreadPool]: SQL status: BEGIN in 0.96 seconds
+[0m14:41:19.419361 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m14:41:19.419496 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb_featuredata3405_scratch"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'featuredata3405_scratch'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'featuredata3405_scratch'
+  
+[0m14:41:19.542314 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.12 seconds
+[0m14:41:19.543606 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: ROLLBACK
+[0m14:41:19.661956 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: Close
+[0m14:41:19.666623 [debug] [MainThread]: Using postgres connection "master"
+[0m14:41:19.666857 [debug] [MainThread]: On master: BEGIN
+[0m14:41:19.666992 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:41:20.630802 [debug] [MainThread]: SQL status: BEGIN in 0.96 seconds
+[0m14:41:20.631040 [debug] [MainThread]: Using postgres connection "master"
+[0m14:41:20.631183 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:41:20.754063 [debug] [MainThread]: SQL status: SELECT 0 in 0.12 seconds
+[0m14:41:20.755180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41324715-da92-4e51-844d-0c9419112760', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a7e3310>]}
+[0m14:41:20.755555 [debug] [MainThread]: On master: ROLLBACK
+[0m14:41:20.873628 [debug] [MainThread]: Using postgres connection "master"
+[0m14:41:20.873868 [debug] [MainThread]: On master: BEGIN
+[0m14:41:21.115620 [debug] [MainThread]: SQL status: BEGIN in 0.24 seconds
+[0m14:41:21.115894 [debug] [MainThread]: On master: COMMIT
+[0m14:41:21.116040 [debug] [MainThread]: Using postgres connection "master"
+[0m14:41:21.116164 [debug] [MainThread]: On master: COMMIT
+[0m14:41:21.241618 [debug] [MainThread]: SQL status: COMMIT in 0.13 seconds
+[0m14:41:21.241887 [debug] [MainThread]: On master: Close
+[0m14:41:21.242390 [info ] [MainThread]: Concurrency: 4 threads (target='postgres')
+[0m14:41:21.242669 [info ] [MainThread]: 
+[0m14:41:21.246185 [debug] [Thread-1  ]: Began running node model.hu_dw_datawarehouse.test_table_2
+[0m14:41:21.246556 [info ] [Thread-1  ]: 1 of 1 START table model featuredata3405_scratch.test_table_2 .................. [RUN]
+[0m14:41:21.247101 [debug] [Thread-1  ]: Acquiring new postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:21.247337 [debug] [Thread-1  ]: Began compiling node model.hu_dw_datawarehouse.test_table_2
+[0m14:41:21.247516 [debug] [Thread-1  ]: Compiling model.hu_dw_datawarehouse.test_table_2
+[0m14:41:21.250647 [debug] [Thread-1  ]: Writing injected SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:21.251300 [debug] [Thread-1  ]: finished collecting timing info
+[0m14:41:21.251550 [debug] [Thread-1  ]: Began executing node model.hu_dw_datawarehouse.test_table_2
+[0m14:41:21.299195 [debug] [Thread-1  ]: Writing runtime SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:21.299826 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:21.300032 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: BEGIN
+[0m14:41:21.300170 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m14:41:22.613628 [debug] [Thread-1  ]: SQL status: BEGIN in 1.31 seconds
+[0m14:41:22.613857 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:22.614013 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+
+
+  create  table "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp"
+  as (
+    
+
+SELECT col
+, col*2 AS col_power_2
+FROM
+"defaultdb"."featuredata3405_scratch"."test_table_1"
+  );
+[0m14:41:22.778215 [debug] [Thread-1  ]: SQL status: SELECT 5 in 0.16 seconds
+[0m14:41:22.784622 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:22.784854 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_2" rename to "test_table_2__dbt_backup"
+[0m14:41:22.937674 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.15 seconds
+[0m14:41:22.940266 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:22.940476 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp" rename to "test_table_2"
+[0m14:41:23.090122 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.15 seconds
+[0m14:41:23.116336 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: COMMIT
+[0m14:41:23.116594 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:23.116726 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: COMMIT
+[0m14:41:23.262596 [debug] [Thread-1  ]: SQL status: COMMIT in 0.15 seconds
+[0m14:41:23.267721 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m14:41:23.267940 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+drop table if exists "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_backup" cascade
+[0m14:41:23.413456 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.15 seconds
+[0m14:41:23.414711 [debug] [Thread-1  ]: finished collecting timing info
+[0m14:41:23.414941 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_2: Close
+[0m14:41:23.415506 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '41324715-da92-4e51-844d-0c9419112760', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7a9bcfd0>]}
+[0m14:41:23.415888 [info ] [Thread-1  ]: 1 of 1 OK created table model featuredata3405_scratch.test_table_2 ............. [[32mSELECT 5[0m in 2.17s]
+[0m14:41:23.416344 [debug] [Thread-1  ]: Finished running node model.hu_dw_datawarehouse.test_table_2
+[0m14:41:23.417754 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m14:41:23.418010 [debug] [MainThread]: Using postgres connection "master"
+[0m14:41:23.418160 [debug] [MainThread]: On master: BEGIN
+[0m14:41:23.418282 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:41:24.436302 [debug] [MainThread]: SQL status: BEGIN in 1.02 seconds
+[0m14:41:24.436572 [debug] [MainThread]: On master: COMMIT
+[0m14:41:24.436706 [debug] [MainThread]: Using postgres connection "master"
+[0m14:41:24.436823 [debug] [MainThread]: On master: COMMIT
+[0m14:41:24.561406 [debug] [MainThread]: SQL status: COMMIT in 0.12 seconds
+[0m14:41:24.561680 [debug] [MainThread]: On master: Close
+[0m14:41:24.562398 [info ] [MainThread]: 
+[0m14:41:24.562658 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 7.24 seconds (7.24s).
+[0m14:41:24.562908 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:41:24.563026 [debug] [MainThread]: Connection 'model.hu_dw_datawarehouse.test_table_2' was properly closed.
+[0m14:41:24.569800 [info ] [MainThread]: 
+[0m14:41:24.570099 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:41:24.570403 [info ] [MainThread]: 
+[0m14:41:24.570668 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:41:24.571033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7aababe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7aaba580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffb7aaba5b0>]}
+[0m14:41:24.571424 [debug] [MainThread]: Flushing usage events

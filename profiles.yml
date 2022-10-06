@@ -1,0 +1,14 @@
+## NOTE: This is evaluated at build time. Any changes will require you to rebuild images using develop --build.
+## You can scrub all your images with `docker kill $(docker ps -q) && docker image rm -f $(docker image ls -q)`
+default:
+  target: postgres
+  outputs:
+    postgres:
+      type: postgres
+      host: db-postgresql-nyc1-37875-do-user-12598274-0.b.db.ondigitalocean.com
+      user: doadmin
+      pass: AVNS_5VO5B5DPycLrTBglKRr
+      port: 25060
+      threads: 4
+      dbname: defaultdb
+      schema: featuredata3405_scratch

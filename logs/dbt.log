@@ -1626,3 +1626,501 @@ drop table if exists "defaultdb"."featuredata3405_scratch"."test_table_3__dbt_ba
 [0m15:39:40.063171 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 [0m15:39:40.063777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe337becd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe338a4880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbe338d0b50>]}
 [0m15:39:40.064276 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-10 15:47:43.846012 | 8a5bc855-69e7-4b29-97ff-08e0ca3b7552 ==============================
+[0m15:47:43.846049 [info ] [MainThread]: Running with dbt=1.2.2
+[0m15:47:43.847526 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'postgres', 'select': ['+test_table_3'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m15:47:43.848135 [debug] [MainThread]: Tracking: tracking
+[0m15:47:43.869535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8face23940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8face238e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8face25910>]}
+[0m15:47:43.934562 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:47:43.937274 [debug] [MainThread]: Partial parsing: updated file: hu_dw_datawarehouse://models/test_table_2.sql
+[0m15:47:43.981225 [debug] [MainThread]: 1603: static parser failed on test_table_2.sql
+[0m15:47:43.996069 [debug] [MainThread]: 1602: parser fallback to jinja rendering on test_table_2.sql
+[0m15:47:44.004585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8a5bc855-69e7-4b29-97ff-08e0ca3b7552', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8faceacf40>]}
+[0m15:47:44.010176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8a5bc855-69e7-4b29-97ff-08e0ca3b7552', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8faced3f10>]}
+[0m15:47:44.010660 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m15:47:44.011042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a5bc855-69e7-4b29-97ff-08e0ca3b7552', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8facc6dd00>]}
+[0m15:47:44.012284 [info ] [MainThread]: 
+[0m15:47:44.012840 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m15:47:44.013969 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb"
+[0m15:47:44.025550 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m15:47:44.025919 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:47:44.026158 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:47:45.168404 [debug] [ThreadPool]: SQL status: SELECT 5 in 1.14 seconds
+[0m15:47:45.170047 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m15:47:45.172021 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m15:47:45.179122 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m15:47:45.179446 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: BEGIN
+[0m15:47:45.179659 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:47:46.144932 [debug] [ThreadPool]: SQL status: BEGIN in 0.97 seconds
+[0m15:47:46.145704 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m15:47:46.146205 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb_featuredata3405_scratch"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'featuredata3405_scratch'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'featuredata3405_scratch'
+  
+[0m15:47:46.276237 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.13 seconds
+[0m15:47:46.280202 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: ROLLBACK
+[0m15:47:46.399484 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: Close
+[0m15:47:46.411877 [debug] [MainThread]: Using postgres connection "master"
+[0m15:47:46.412283 [debug] [MainThread]: On master: BEGIN
+[0m15:47:46.412552 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:47:47.391109 [debug] [MainThread]: SQL status: BEGIN in 0.98 seconds
+[0m15:47:47.391842 [debug] [MainThread]: Using postgres connection "master"
+[0m15:47:47.392335 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:47:47.518254 [debug] [MainThread]: SQL status: SELECT 0 in 0.13 seconds
+[0m15:47:47.522072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8a5bc855-69e7-4b29-97ff-08e0ca3b7552', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fac8acee0>]}
+[0m15:47:47.522781 [debug] [MainThread]: On master: ROLLBACK
+[0m15:47:47.641405 [debug] [MainThread]: Using postgres connection "master"
+[0m15:47:47.641684 [debug] [MainThread]: On master: BEGIN
+[0m15:47:47.883941 [debug] [MainThread]: SQL status: BEGIN in 0.24 seconds
+[0m15:47:47.884791 [debug] [MainThread]: On master: COMMIT
+[0m15:47:47.885368 [debug] [MainThread]: Using postgres connection "master"
+[0m15:47:47.885834 [debug] [MainThread]: On master: COMMIT
+[0m15:47:48.004899 [debug] [MainThread]: SQL status: COMMIT in 0.12 seconds
+[0m15:47:48.005839 [debug] [MainThread]: On master: Close
+[0m15:47:48.007451 [info ] [MainThread]: Concurrency: 4 threads (target='postgres')
+[0m15:47:48.008441 [info ] [MainThread]: 
+[0m15:47:48.015843 [debug] [Thread-1  ]: Began running node model.hu_dw_datawarehouse.test_table_1
+[0m15:47:48.016492 [info ] [Thread-1  ]: 1 of 3 START table model featuredata3405_scratch.test_table_1 .................. [RUN]
+[0m15:47:48.017445 [debug] [Thread-1  ]: Acquiring new postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:48.017821 [debug] [Thread-1  ]: Began compiling node model.hu_dw_datawarehouse.test_table_1
+[0m15:47:48.018134 [debug] [Thread-1  ]: Compiling model.hu_dw_datawarehouse.test_table_1
+[0m15:47:48.024240 [debug] [Thread-1  ]: Writing injected SQL for node "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:48.025270 [debug] [Thread-1  ]: finished collecting timing info
+[0m15:47:48.025684 [debug] [Thread-1  ]: Began executing node model.hu_dw_datawarehouse.test_table_1
+[0m15:47:48.076387 [debug] [Thread-1  ]: Writing runtime SQL for node "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:48.077047 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:48.077244 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: BEGIN
+[0m15:47:48.077456 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:47:49.079782 [debug] [Thread-1  ]: SQL status: BEGIN in 1.0 seconds
+[0m15:47:49.080611 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:49.081120 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+
+
+  create  table "defaultdb"."featuredata3405_scratch"."test_table_1__dbt_tmp"
+  as (
+    
+
+SELECT 
+col
+, POWER(col,2) AS col_power_2
+FROM
+"defaultdb"."featuredata3405_scratch"."source_table"
+  );
+[0m15:47:49.243802 [debug] [Thread-1  ]: SQL status: SELECT 5 in 0.16 seconds
+[0m15:47:49.255945 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:49.256320 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_1" rename to "test_table_1__dbt_backup"
+[0m15:47:49.427343 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.17 seconds
+[0m15:47:49.429892 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:49.430097 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_1__dbt_tmp" rename to "test_table_1"
+[0m15:47:49.613321 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.18 seconds
+[0m15:47:49.636936 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: COMMIT
+[0m15:47:49.637181 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:49.637322 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: COMMIT
+[0m15:47:49.829159 [debug] [Thread-1  ]: SQL status: COMMIT in 0.19 seconds
+[0m15:47:49.834479 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:47:49.834833 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+drop table if exists "defaultdb"."featuredata3405_scratch"."test_table_1__dbt_backup" cascade
+[0m15:47:50.037721 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.2 seconds
+[0m15:47:50.041620 [debug] [Thread-1  ]: finished collecting timing info
+[0m15:47:50.042114 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: Close
+[0m15:47:50.043322 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8a5bc855-69e7-4b29-97ff-08e0ca3b7552', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fad13c0d0>]}
+[0m15:47:50.044125 [info ] [Thread-1  ]: 1 of 3 OK created table model featuredata3405_scratch.test_table_1 ............. [[32mSELECT 5[0m in 2.03s]
+[0m15:47:50.045050 [debug] [Thread-1  ]: Finished running node model.hu_dw_datawarehouse.test_table_1
+[0m15:47:50.046595 [debug] [Thread-3  ]: Began running node model.hu_dw_datawarehouse.test_table_2
+[0m15:47:50.047464 [info ] [Thread-3  ]: 2 of 3 START table model featuredata3405_scratch.test_table_2 .................. [RUN]
+[0m15:47:50.048632 [debug] [Thread-3  ]: Acquiring new postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m15:47:50.049032 [debug] [Thread-3  ]: Began compiling node model.hu_dw_datawarehouse.test_table_2
+[0m15:47:50.049358 [debug] [Thread-3  ]: Compiling model.hu_dw_datawarehouse.test_table_2
+[0m15:47:50.054737 [debug] [Thread-3  ]: Writing injected SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m15:47:50.055788 [debug] [Thread-3  ]: finished collecting timing info
+[0m15:47:50.056231 [debug] [Thread-3  ]: Began executing node model.hu_dw_datawarehouse.test_table_2
+[0m15:47:50.063794 [debug] [Thread-3  ]: Writing runtime SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m15:47:50.064566 [debug] [Thread-3  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m15:47:50.064804 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: BEGIN
+[0m15:47:50.064977 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m15:47:52.147781 [debug] [Thread-3  ]: SQL status: BEGIN in 2.08 seconds
+[0m15:47:52.148591 [debug] [Thread-3  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m15:47:52.149128 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+
+
+  create  table "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp"
+  as (
+    
+
+SELECT 
+col
+, col_power_2
+, POWER(col,3) AS col_power_3
+, 1/0
+FROM
+"defaultdb"."featuredata3405_scratch"."test_table_1"
+  );
+[0m15:47:52.359219 [debug] [Thread-3  ]: Postgres adapter: Postgres error: division by zero
+
+[0m15:47:52.359707 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: ROLLBACK
+[0m15:47:52.562204 [debug] [Thread-3  ]: finished collecting timing info
+[0m15:47:52.562998 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: Close
+[0m15:47:52.564794 [debug] [Thread-3  ]: Database Error in model test_table_2 (models/test_table_2.sql)
+  division by zero
+  compiled SQL at target/run/hu_dw_datawarehouse/models/test_table_2.sql
+[0m15:47:52.565837 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8a5bc855-69e7-4b29-97ff-08e0ca3b7552', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fad170250>]}
+[0m15:47:52.566701 [error] [Thread-3  ]: 2 of 3 ERROR creating table model featuredata3405_scratch.test_table_2 ......... [[31mERROR[0m in 2.52s]
+[0m15:47:52.567660 [debug] [Thread-3  ]: Finished running node model.hu_dw_datawarehouse.test_table_2
+[0m15:47:52.568867 [debug] [Thread-2  ]: Began running node model.hu_dw_datawarehouse.test_table_3
+[0m15:47:52.569669 [info ] [Thread-2  ]: 3 of 3 SKIP relation featuredata3405_scratch.test_table_3 ...................... [[33mSKIP[0m]
+[0m15:47:52.570863 [debug] [Thread-2  ]: Finished running node model.hu_dw_datawarehouse.test_table_3
+[0m15:47:52.573237 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m15:47:52.573695 [debug] [MainThread]: Using postgres connection "master"
+[0m15:47:52.573981 [debug] [MainThread]: On master: BEGIN
+[0m15:47:52.574224 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:47:53.655190 [debug] [MainThread]: SQL status: BEGIN in 1.08 seconds
+[0m15:47:53.656573 [debug] [MainThread]: On master: COMMIT
+[0m15:47:53.657236 [debug] [MainThread]: Using postgres connection "master"
+[0m15:47:53.657599 [debug] [MainThread]: On master: COMMIT
+[0m15:47:53.784896 [debug] [MainThread]: SQL status: COMMIT in 0.13 seconds
+[0m15:47:53.785826 [debug] [MainThread]: On master: Close
+[0m15:47:53.787788 [info ] [MainThread]: 
+[0m15:47:53.788866 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 9.77 seconds (9.77s).
+[0m15:47:53.789488 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:47:53.789818 [debug] [MainThread]: Connection 'model.hu_dw_datawarehouse.test_table_1' was properly closed.
+[0m15:47:53.790142 [debug] [MainThread]: Connection 'model.hu_dw_datawarehouse.test_table_2' was properly closed.
+[0m15:47:53.801968 [info ] [MainThread]: 
+[0m15:47:53.802506 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:47:53.803164 [info ] [MainThread]: 
+[0m15:47:53.803625 [error] [MainThread]: [33mDatabase Error in model test_table_2 (models/test_table_2.sql)[0m
+[0m15:47:53.804061 [error] [MainThread]:   division by zero
+[0m15:47:53.804478 [error] [MainThread]:   compiled SQL at target/run/hu_dw_datawarehouse/models/test_table_2.sql
+[0m15:47:53.808708 [info ] [MainThread]: 
+[0m15:47:53.812181 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=1 TOTAL=3
+[0m15:47:53.813652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8face79130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8facfae490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8faced3580>]}
+[0m15:47:53.814939 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2022-10-10 15:50:33.932437 | 92205e2d-cef8-45b0-b01c-15ea8e449f8d ==============================
+[0m15:50:33.932495 [info ] [MainThread]: Running with dbt=1.2.2
+[0m15:50:33.933216 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/okolesnikov/Documents/health-union/Repos/DATA-3405-test', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'target': 'postgres', 'select': ['+test_table_3'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m15:50:33.933426 [debug] [MainThread]: Tracking: tracking
+[0m15:50:33.953416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff023670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff0238e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff025910>]}
+[0m15:50:33.995426 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:50:33.995653 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:50:34.002420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '92205e2d-cef8-45b0-b01c-15ea8e449f8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff0990d0>]}
+[0m15:50:34.008686 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '92205e2d-cef8-45b0-b01c-15ea8e449f8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff1ae0a0>]}
+[0m15:50:34.009007 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 256 macros, 0 operations, 0 seed files, 1 source, 0 exposures, 0 metrics
+[0m15:50:34.009289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92205e2d-cef8-45b0-b01c-15ea8e449f8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff1ae100>]}
+[0m15:50:34.010781 [info ] [MainThread]: 
+[0m15:50:34.011379 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m15:50:34.012600 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb"
+[0m15:50:34.054779 [debug] [ThreadPool]: Using postgres connection "list_defaultdb"
+[0m15:50:34.055017 [debug] [ThreadPool]: On list_defaultdb: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:50:34.055197 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:50:35.131680 [debug] [ThreadPool]: SQL status: SELECT 5 in 1.08 seconds
+[0m15:50:35.133080 [debug] [ThreadPool]: On list_defaultdb: Close
+[0m15:50:35.134459 [debug] [ThreadPool]: Acquiring new postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m15:50:35.140355 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m15:50:35.140592 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: BEGIN
+[0m15:50:35.140813 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:50:36.106720 [debug] [ThreadPool]: SQL status: BEGIN in 0.97 seconds
+[0m15:50:36.107153 [debug] [ThreadPool]: Using postgres connection "list_defaultdb_featuredata3405_scratch"
+[0m15:50:36.107441 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "list_defaultdb_featuredata3405_scratch"} */
+select
+      'defaultdb' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'featuredata3405_scratch'
+    union all
+    select
+      'defaultdb' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'featuredata3405_scratch'
+  
+[0m15:50:36.229407 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.12 seconds
+[0m15:50:36.232687 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: ROLLBACK
+[0m15:50:36.353267 [debug] [ThreadPool]: On list_defaultdb_featuredata3405_scratch: Close
+[0m15:50:36.363346 [debug] [MainThread]: Using postgres connection "master"
+[0m15:50:36.363745 [debug] [MainThread]: On master: BEGIN
+[0m15:50:36.364017 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:50:37.338318 [debug] [MainThread]: SQL status: BEGIN in 0.97 seconds
+[0m15:50:37.339103 [debug] [MainThread]: Using postgres connection "master"
+[0m15:50:37.339619 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m15:50:37.463904 [debug] [MainThread]: SQL status: SELECT 0 in 0.12 seconds
+[0m15:50:37.467692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '92205e2d-cef8-45b0-b01c-15ea8e449f8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9fd958b20>]}
+[0m15:50:37.468431 [debug] [MainThread]: On master: ROLLBACK
+[0m15:50:37.587488 [debug] [MainThread]: Using postgres connection "master"
+[0m15:50:37.588317 [debug] [MainThread]: On master: BEGIN
+[0m15:50:37.827814 [debug] [MainThread]: SQL status: BEGIN in 0.24 seconds
+[0m15:50:37.828676 [debug] [MainThread]: On master: COMMIT
+[0m15:50:37.829231 [debug] [MainThread]: Using postgres connection "master"
+[0m15:50:37.829715 [debug] [MainThread]: On master: COMMIT
+[0m15:50:37.951113 [debug] [MainThread]: SQL status: COMMIT in 0.12 seconds
+[0m15:50:37.952082 [debug] [MainThread]: On master: Close
+[0m15:50:37.953717 [info ] [MainThread]: Concurrency: 4 threads (target='postgres')
+[0m15:50:37.954725 [info ] [MainThread]: 
+[0m15:50:37.962385 [debug] [Thread-1  ]: Began running node model.hu_dw_datawarehouse.test_table_1
+[0m15:50:37.963024 [info ] [Thread-1  ]: 1 of 3 START table model featuredata3405_scratch.test_table_1 .................. [RUN]
+[0m15:50:37.963963 [debug] [Thread-1  ]: Acquiring new postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:37.964309 [debug] [Thread-1  ]: Began compiling node model.hu_dw_datawarehouse.test_table_1
+[0m15:50:37.964622 [debug] [Thread-1  ]: Compiling model.hu_dw_datawarehouse.test_table_1
+[0m15:50:37.970513 [debug] [Thread-1  ]: Writing injected SQL for node "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:37.971397 [debug] [Thread-1  ]: finished collecting timing info
+[0m15:50:37.971700 [debug] [Thread-1  ]: Began executing node model.hu_dw_datawarehouse.test_table_1
+[0m15:50:38.019560 [debug] [Thread-1  ]: Writing runtime SQL for node "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:38.020215 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:38.020449 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: BEGIN
+[0m15:50:38.020605 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m15:50:39.009373 [debug] [Thread-1  ]: SQL status: BEGIN in 0.99 seconds
+[0m15:50:39.010227 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:39.010777 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+
+
+  create  table "defaultdb"."featuredata3405_scratch"."test_table_1__dbt_tmp"
+  as (
+    
+
+SELECT 
+col
+, POWER(col,2) AS col_power_2
+FROM
+"defaultdb"."featuredata3405_scratch"."source_table"
+  );
+[0m15:50:39.131445 [debug] [Thread-1  ]: SQL status: SELECT 5 in 0.12 seconds
+[0m15:50:39.146167 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:39.146588 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_1" rename to "test_table_1__dbt_backup"
+[0m15:50:39.266392 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.12 seconds
+[0m15:50:39.274302 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:39.274759 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+alter table "defaultdb"."featuredata3405_scratch"."test_table_1__dbt_tmp" rename to "test_table_1"
+[0m15:50:39.397489 [debug] [Thread-1  ]: SQL status: ALTER TABLE in 0.12 seconds
+[0m15:50:39.420925 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: COMMIT
+[0m15:50:39.434546 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:39.434925 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: COMMIT
+[0m15:50:39.561631 [debug] [Thread-1  ]: SQL status: COMMIT in 0.13 seconds
+[0m15:50:39.566438 [debug] [Thread-1  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_1"
+[0m15:50:39.566676 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_1"} */
+drop table if exists "defaultdb"."featuredata3405_scratch"."test_table_1__dbt_backup" cascade
+[0m15:50:39.692712 [debug] [Thread-1  ]: SQL status: DROP TABLE in 0.13 seconds
+[0m15:50:39.693972 [debug] [Thread-1  ]: finished collecting timing info
+[0m15:50:39.694187 [debug] [Thread-1  ]: On model.hu_dw_datawarehouse.test_table_1: Close
+[0m15:50:39.694828 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92205e2d-cef8-45b0-b01c-15ea8e449f8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff22ce50>]}
+[0m15:50:39.695304 [info ] [Thread-1  ]: 1 of 3 OK created table model featuredata3405_scratch.test_table_1 ............. [[32mSELECT 5[0m in 1.73s]
+[0m15:50:39.695789 [debug] [Thread-1  ]: Finished running node model.hu_dw_datawarehouse.test_table_1
+[0m15:50:39.696591 [debug] [Thread-3  ]: Began running node model.hu_dw_datawarehouse.test_table_2
+[0m15:50:39.697127 [info ] [Thread-3  ]: 2 of 3 START table model featuredata3405_scratch.test_table_2 .................. [RUN]
+[0m15:50:39.697778 [debug] [Thread-3  ]: Acquiring new postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m15:50:39.697998 [debug] [Thread-3  ]: Began compiling node model.hu_dw_datawarehouse.test_table_2
+[0m15:50:39.698164 [debug] [Thread-3  ]: Compiling model.hu_dw_datawarehouse.test_table_2
+[0m15:50:39.701245 [debug] [Thread-3  ]: Writing injected SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m15:50:39.701982 [debug] [Thread-3  ]: finished collecting timing info
+[0m15:50:39.702255 [debug] [Thread-3  ]: Began executing node model.hu_dw_datawarehouse.test_table_2
+[0m15:50:39.706749 [debug] [Thread-3  ]: Writing runtime SQL for node "model.hu_dw_datawarehouse.test_table_2"
+[0m15:50:39.707404 [debug] [Thread-3  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m15:50:39.707631 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: BEGIN
+[0m15:50:39.707755 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m15:50:40.678066 [debug] [Thread-3  ]: SQL status: BEGIN in 0.97 seconds
+[0m15:50:40.678515 [debug] [Thread-3  ]: Using postgres connection "model.hu_dw_datawarehouse.test_table_2"
+[0m15:50:40.678824 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: /* {"app": "dbt", "dbt_version": "1.2.2", "profile_name": "default", "target_name": "postgres", "node_id": "model.hu_dw_datawarehouse.test_table_2"} */
+
+
+  create  table "defaultdb"."featuredata3405_scratch"."test_table_2__dbt_tmp"
+  as (
+    
+
+SELECT 
+col
+, col_power_2
+, POWER(col,3) AS col_power_3
+, 1/0
+FROM
+"defaultdb"."featuredata3405_scratch"."test_table_1"
+  );
+[0m15:50:40.802889 [debug] [Thread-3  ]: Postgres adapter: Postgres error: division by zero
+
+[0m15:50:40.803460 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: ROLLBACK
+[0m15:50:40.922845 [debug] [Thread-3  ]: finished collecting timing info
+[0m15:50:40.923665 [debug] [Thread-3  ]: On model.hu_dw_datawarehouse.test_table_2: Close
+[0m15:50:40.925286 [debug] [Thread-3  ]: Database Error in model test_table_2 (models/test_table_2.sql)
+  division by zero
+  compiled SQL at target/run/hu_dw_datawarehouse/models/test_table_2.sql
+[0m15:50:40.926194 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '92205e2d-cef8-45b0-b01c-15ea8e449f8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff2763d0>]}
+[0m15:50:40.926993 [error] [Thread-3  ]: 2 of 3 ERROR creating table model featuredata3405_scratch.test_table_2 ......... [[31mERROR[0m in 1.23s]
+[0m15:50:40.927962 [debug] [Thread-3  ]: Finished running node model.hu_dw_datawarehouse.test_table_2
+[0m15:50:40.929135 [debug] [Thread-2  ]: Began running node model.hu_dw_datawarehouse.test_table_3
+[0m15:50:40.929865 [info ] [Thread-2  ]: 3 of 3 SKIP relation featuredata3405_scratch.test_table_3 ...................... [[33mSKIP[0m]
+[0m15:50:40.931073 [debug] [Thread-2  ]: Finished running node model.hu_dw_datawarehouse.test_table_3
+[0m15:50:40.934255 [debug] [MainThread]: Acquiring new postgres connection "master"
+[0m15:50:40.934751 [debug] [MainThread]: Using postgres connection "master"
+[0m15:50:40.935062 [debug] [MainThread]: On master: BEGIN
+[0m15:50:40.935334 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:50:41.920837 [debug] [MainThread]: SQL status: BEGIN in 0.99 seconds
+[0m15:50:41.921651 [debug] [MainThread]: On master: COMMIT
+[0m15:50:41.922180 [debug] [MainThread]: Using postgres connection "master"
+[0m15:50:41.922660 [debug] [MainThread]: On master: COMMIT
+[0m15:50:42.042961 [debug] [MainThread]: SQL status: COMMIT in 0.12 seconds
+[0m15:50:42.043800 [debug] [MainThread]: On master: Close
+[0m15:50:42.045517 [info ] [MainThread]: 
+[0m15:50:42.046253 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 8.03 seconds (8.03s).
+[0m15:50:42.046915 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:50:42.047251 [debug] [MainThread]: Connection 'model.hu_dw_datawarehouse.test_table_1' was properly closed.
+[0m15:50:42.047590 [debug] [MainThread]: Connection 'model.hu_dw_datawarehouse.test_table_2' was properly closed.
+[0m15:50:42.059211 [info ] [MainThread]: 
+[0m15:50:42.059744 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m15:50:42.060212 [info ] [MainThread]: 
+[0m15:50:42.060715 [error] [MainThread]: [33mDatabase Error in model test_table_2 (models/test_table_2.sql)[0m
+[0m15:50:42.061378 [error] [MainThread]:   division by zero
+[0m15:50:42.061865 [error] [MainThread]:   compiled SQL at target/run/hu_dw_datawarehouse/models/test_table_2.sql
+[0m15:50:42.062327 [info ] [MainThread]: 
+[0m15:50:42.063069 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=1 TOTAL=3
+[0m15:50:42.063775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff0d25e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff201c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff9ff2078e0>]}
+[0m15:50:42.064177 [debug] [MainThread]: Flushing usage events

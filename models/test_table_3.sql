@@ -6,7 +6,7 @@
 SELECT 
 col
 , col_power_2
-, POWER(col,3) AS col_power_3
+, col_power_3
+, POWER(col,4) AS col_power_4
 FROM
-{{ ref("test_table_1") }}
-where smth = 0
+{{ ref("test_table_2") }}

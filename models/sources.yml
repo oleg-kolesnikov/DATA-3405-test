@@ -5,4 +5,4 @@ sources:
     database: defaultdb
     schema: featuredata3405_scratch
     tables:
-      - name: test_table_1
+      - name: source_table

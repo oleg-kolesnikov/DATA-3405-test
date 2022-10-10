@@ -1,5 +1,3 @@
-## NOTE: This is evaluated at build time. Any changes will require you to rebuild images using develop --build.
-## You can scrub all your images with `docker kill $(docker ps -q) && docker image rm -f $(docker image ls -q)`
 default:
   target: postgres
   outputs:
